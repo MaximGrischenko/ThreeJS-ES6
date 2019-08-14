@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ThreeJS</title>
+</head>
+<body>
+  <main id="root">
+    <section id="WebGL"></section>
+    <header id="header">
+      <div class="container">
+        <div id="toolbar">
+          <div class="menu">
+            <input class="menu-toggle" id="toggle" type="checkbox" />
+            <label class="menu-button" for="toggle">
+              <span></span>
+            </label>
+            <ul class="menu-box">
+              <li class="menu-box--top">Cube
+                <ul class="menu-box--inner">
+                  <li data-type="cube">
+                    <p>Parameters</p>
+                    <input type="number" min="0" max="10" data-params="width" placeholder="width" />
+                    <input type="number" min="0" max="10" data-params="height" placeholder="height" />
+                    <input type="number" min="0" max="10" data-params="depth" placeholder="depth" />
+                    <hr>
+                    <p>Material</p>
+                    <label><input name="cube" type="radio" value="BasicMaterial" checked>Basic Material</label>
+                    <label><input name="cube" type="radio" value="PhongMaterial">Phong Material</label>
+                    <label><input name="cube" type="radio" value="LambertMaterial">Lambert Material</label>
+                    <label><input name="cube" type="radio" value="ToonMaterial">Toon Material</label>
+                    <input type="button" data-event="add" class="create" value="Add to Scene" />
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-box--top">Sphere
+                <ul class="menu-box--inner">
+                  <li data-type="sphere">
+                    <p>Parameters</p>
+                    <input type="number" min="0" max="10" data-params="radius" placeholder="radius" />
+                    <hr>
+                    <p>Material</p>
+                    <label><input name="sphere" type="radio" value="BasicMaterial" checked>Basic Material</label>
+                    <label><input name="sphere" type="radio" value="PhongMaterial">Phong Material</label>
+                    <label><input name="sphere" type="radio" value="LambertMaterial">Lambert Material</label>
+                    <label><input name="sphere" type="radio" value="ToonMaterial">Toon Material</label>
+                    <input type="button" data-event="add" class="create" value="Add to Scene" />
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-box--top">Cone
+                <ul class="menu-box--inner">
+                  <li data-type="cone">
+                    <p>Parameters</p>
+                    <input type="number" min="0" max="10" data-params="radius" placeholder="radius" />
+                    <input type="number" min="0" max="10" data-params="height" placeholder="height" />
+                    <hr>
+                    <p>Material</p>
+                    <label><input name="cone" type="radio" value="BasicMaterial" checked>Basic Material</label>
+                    <label><input name="cone" type="radio" value="PhongMaterial">Phong Material</label>
+                    <label><input name="cone" type="radio" value="LambertMaterial">Lambert Material</label>
+                    <label><input name="cone" type="radio" value="ToonMaterial">Toon Material</label>
+
+                    <input type="button" data-event="add" class="create" value="Add to Scene" />
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="popup">
+      <div class="popup-content">
+        <div>
+          <label id="details"></label>
+          <hr>
+          <input type="color" id="color" name="color"
+                 value="#ffffff">
+          <label for="color">Color</label>
+          <hr>
+          <input id="delete" type="button" value="delete">
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
